@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68", "setuptools_scm[toml]>=8"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "extremes-mcmc"
+description = "A python project implementing mcmc for non-stationary generalised extreme value distributions & non-homogeneous gaussian regression"
+readme = "README.md"
+authors = [
+  {name = "Callum Leach", email = "callum.leach@shell.com" }
+]
+maintainers = [
+  {name = "Callum Leach", email = "callum.leach@shell.com" }
+]
+requires-python = ">=3.8"
+dynamic = ["version"]
+dependencies = [
+    "numpy",
+    "pandas",
+    "matplotlib",
+    "scipy",
+    "plotly-express",
+    "openturns",
+    "pyarrow",
+    "nbformat>=4.2.0"
+]
+
+# Enables the usage of setuptools_scm
+[tool.setuptools_scm]
